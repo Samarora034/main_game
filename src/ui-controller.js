@@ -4,22 +4,7 @@ import {entity} from './entity.js';
 export const ui_controller = (() => {
 
   const _PHRASES = [
-    [' ', 5],
-    ['SimonDev: All wings report in.', 10],
-    ['O-Boy: I am a leaf on the wind...', 10],
-    ['O-Boy: Watch how I fly.', 10],
-    ["SimonDev: Hey uhhh don't forget to subscribe.", 10],
-    ["Jinjie: I'm coming in hot!", 10],
-    ["SimonDev: Please subscribe, I need subscribers.", 10],
-    ["Zozo: Moya... come in.", 10],
-    ["Zozo: It's a ship, a LIVING ship.", 10],
-    ["SimonDev: Also, contribute to my Patreon.", 10],
-    ['Kai: I am Kai, last of the Brunnen-G.', 10],
-    ["SimonDev: Really need a steady supply of coffee and beer. And groceries.", 10],
-    ['Kai: Today is my day of death. The day our story begins.', 10],
-    ["SimonDev: Yeah so, Patreon and subscribe.", 10],
-    ['Kai: The dead do not contribute to Patreon.', 10],
-    ['SimonDev: Shutup Meg.', 10],
+    ['Kill all Enenmies', 5]
   ];
 
   class UIController extends entity.Component {

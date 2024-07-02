@@ -165,3 +165,33 @@ window.addEventListener('DOMContentLoaded', () => {
   };
   document.body.addEventListener('click', _Setup);
 });
+
+
+
+
+
+
+//loading screen
+const loadingBar = document.querySelector('.loading-bar');
+const loadingScreen = document.querySelector('.loading-screen');
+const audioElement = document.getElementById('myaudio');
+let progress = 0;
+
+function updateLoadingBar() {
+    progress += 20; // Increase by 25%
+    loadingBar.style.width = `${progress}%`;
+
+    if (progress < 100) {
+        setTimeout(updateLoadingBar, 1000); // Pause for 1 second and continue
+    } else {
+        // Add a delay before hiding the loading screen
+        setTimeout(() => {
+            loadingScreen.classList.add('fading');
+            setTimeout(() => {
+                loadingScreen.classList.add('loaded');
+            }, 500); // Delay for the fade-out transition
+        }, 1000); // Delay of 1.5 seconds at 100%
+    }
+}
+
+updateLoadingBar();

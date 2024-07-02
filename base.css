@@ -78,3 +78,59 @@ body {
     visibility: hidden;
   }
 }
+
+
+
+
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at center center, #5d5d5d 0, #090909 58%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.loading-screen.fading {
+  opacity: 0;
+}
+
+.loading-screen.loaded {
+  visibility: hidden;
+}
+
+#loading-text-intro {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.loading-bar-container {
+  width: calc(100% + 20px);
+  max-width: 300px;
+  height: 30px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-bar {
+  width: 0;
+  height: 100%;
+  background-color: white;
+  transition: width 1s ease;
+}

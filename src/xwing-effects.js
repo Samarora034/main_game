@@ -83,8 +83,9 @@ export const xwing_effect = (() => {
 
       this.SetupFireFX_();
     }
-
+    //retry screen appears when the ship get destroyed
     Destroy() {
+      document.getElementById('retryScreen').style.display = 'flex';
       this.blasterFX_.Destroy();
       this.blasterFX_ = null;
     }

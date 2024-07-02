@@ -45,6 +45,7 @@ export const crosshair = (() => {
     }
 
     OnDeath_() {
+      
       this.Destroy();
     }
 

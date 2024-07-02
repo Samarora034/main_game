@@ -134,3 +134,42 @@ body {
   background-color: white;
   transition: width 1s ease;
 }
+
+
+
+.retry-screen {
+  display: none; /* Initially hide the retry screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.retry-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgba(01,01,01,0.2);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.retry-button:hover{
+  background-color: rgba(0,0,0,1);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.retry-content{
+  font-size: 72px ; 
+  color: silver;
+}

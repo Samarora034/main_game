@@ -68,10 +68,13 @@ export const health_controller = (() => {
 
       if (this.Parent.Attributes.health <= 0) {
         this.Parent.Attributes.dead = true;
+        let a = 0;
+        console.log(a+1);
         this.Broadcast({topic: 'health.dead'});
         this.Parent.SetDead(true);
         const e = this.FindEntity('spawners').GetComponent('ExplosionSpawner').Spawn(this.Parent.Position);
         e.Broadcast({topic: 'health.dead'});
+        
       }
     }
 

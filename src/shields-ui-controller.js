@@ -155,6 +155,7 @@ export const shields_ui_controller = (() => {
     }
 
     OnDeath_() {
+      
       this.Destroy();
     }
 
